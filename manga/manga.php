@@ -12,6 +12,6 @@ $id = $_GET['id'];
 
 
         echo '<br>' . $manga['description'] . '<br>';
-        echo '<br> Personnage : ' . $manga['perso'] . '<br>';
+        echo "<a href='personnage.php?idpersonnage=".$manga['idperso']."'>". $manga['perso'] . '</a><br>';
 
 ?>
