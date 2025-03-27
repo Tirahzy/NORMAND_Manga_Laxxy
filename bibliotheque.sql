@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost:3306
--- Généré le : jeu. 27 mars 2025 à 13:33
+-- Généré le : jeu. 27 mars 2025 à 13:49
 -- Version du serveur : 5.7.24
 -- Version de PHP : 8.3.1
 
@@ -80,7 +80,7 @@ INSERT INTO `manga` (`titre`, `année`, `note`, `description`, `idmanga`, `idAut
 
 CREATE TABLE `personnage` (
   `perso` varchar(100) NOT NULL,
-  `descripiton` varchar(5000) NOT NULL,
+  `desc` varchar(5000) NOT NULL,
   `idperso` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -88,7 +88,7 @@ CREATE TABLE `personnage` (
 -- Déchargement des données de la table `personnage`
 --
 
-INSERT INTO `personnage` (`perso`, `descripiton`, `idperso`) VALUES
+INSERT INTO `personnage` (`perso`, `desc`, `idperso`) VALUES
 ('Guts', 'Guts is the protagonist of the story. He is a tall, muscular man with a huge sword called the Dragon Slayer, a prosthetic left forearm that has a magnetic grip which also conceals a cannon. Guts is a tragic hero; he is born as one who may be able to struggle against Causality, but seemingly unable to affect it on a large scale.', 1),
 ('Johnny \"Joe Kid, JoJo\" Joestar', 'Johnny Joestar, also known as \"Joe Kid\" or \"JoJo\", was a racing prodigy. However, when waiting in line for a play, the girl he was with convinced him to cut to the front of the line and bribe the bouncers to throw out the youth in the front of the line, who had been waiting through the night. The youth shot Johnny, resulting in his being paralyzed from the waist down and sent to a hospital, where he was physically abused. Having lost all the friends and respect he had earned as a jockey, no one visited him during his stay in the hospital.', 2),
 ('Kojirou \"Ganryuu\" Sasaki', 'The legendary archrival of Miyamoto Musashi. Raised by Kanemaki Jisai, after he is found as a baby in casket, floating on the ocean.\r\n\r\nHe develops an intense attachment to swords and fencing at an early age, possessing an almost preternatural ability to react to his opponents\' moves.\r\n\r\nKojirou is deaf and mute, though still literate. His personality is very playful, almost child-like. Ittousai has also commented on the possibility that Kojirou\'s eyes have become better developed to compensate for his lack of hearing.\r\n\r\nKojirou is renowned for his \"Tsubame Gaeshi\" (Turning Swallow Cut) technique, inspired by the movement of a swallow in flight.', 3),
